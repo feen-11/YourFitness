@@ -48,7 +48,7 @@ class PostTraining extends Controller {
           $app->postTraining();
         }  
         // redirect
-        header('Location: SITE_URL');
+        header('Location: ' . SITE_URL . '/index.php');
         exit;
     }
     
