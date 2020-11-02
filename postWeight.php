@@ -61,7 +61,7 @@ $app->run();
 
   </main>
   </div>
-  <footer class="fixed-bottom footer text-center  flex-column d-flex align-items-center justify-content-center">
+  <footer class="footer text-center  flex-column d-flex align-items-center justify-content-center">
     <div class="copyrights">
       <p>Copyright©️ YourFitness All Rights Reserved.</p>
       <p>Designed By Taichi Shiozawa</p>
