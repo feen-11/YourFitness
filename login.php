@@ -7,7 +7,11 @@ $app->run();
 
 $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
 var_dump($db);
-var_dump(SITE_URL);
+<br>
+var_dump($db['dbname'] = ltrim($db['path'], '/'));
+var_dump($dsn = "mysql:host={$db['host']};dbname={$db['dbname']};charset=utf8");
+var_dump($user = $db['user']);
+var_dump($password = $db['pass']);
 
 ?>
 
