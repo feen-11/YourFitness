@@ -48,7 +48,7 @@ $todayPost = $app->checkPost();
         <h3 class="heading text-center"><?php echo date('Y年m月d日') ?>の日記</h3>
         <form action="" method="post" id="body">
           <p class="post-heading">今日を振り返って</p>
-          <textarea name="body" class="" placeholder="できた事や感想、反省など"><?php isset($todayPost['body']) ? $todayPost['body'] : '' ?></textarea>
+          <textarea name="body" class="" placeholder="できた事や感想、反省など"><?= isset($todayPost['body']) ? $todayPost['body'] : '' ?></textarea>
           <p class="err"><?= h($app->getErrors('token'));?></p>
           <p class="err"><?= h($app->getErrors('body'));?></p>
           <div class="justify-content-center col-sm-12 col-md-6 mx-auto text-center">
