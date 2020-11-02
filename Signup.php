@@ -40,7 +40,7 @@ class Signup extends Controller{
         $user = new User();
         $user->userCreate();
         // redirect
-        header('Location: http://yourfitness.herokuapp.com/.php');
+        header('Location: ' . SITE_URL . '/login.php');
       }
   }
 
