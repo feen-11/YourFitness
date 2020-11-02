@@ -32,7 +32,7 @@ class PostWeight extends Controller{
     } else{
       $app = new User();
       $app->postWeight();
-      header('Location: SITE_URL');
+      header('Location: ' . SITE_URL . '/index.php');
     }
   }
 
