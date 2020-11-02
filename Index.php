@@ -13,21 +13,21 @@ require_once(__DIR__ . '/InvalidBurnCalorie.php');
 class Index extends Controller {
   
   public function run() {
-//     if (!$this->loginCheck()) {
-//       // login
-//       header('Location: ' . SITE_URL . '/login.php');
-//       exit;
-//     }
-//     if (!$this->setUpCheck()) {
-//       // setup
-//       header('Location: ' . SITE_URL . '/setUp.php');
-//       exit;
-//     }
-//     if (!$this->startCheck()) {
-//       // start
-//       header('Location: ' . SITE_URL . '/start.php');
-//       exit;
-//     }
+    if (!$this->loginCheck()) {
+      // login
+      header('Location: ' . SITE_URL . '/login.php');
+      exit;
+    }
+    if (!$this->setUpCheck()) {
+      // setup
+      header('Location: ' . SITE_URL . '/setUp.php');
+      exit;
+    }
+    if (!$this->startCheck()) {
+      // start
+      header('Location: ' . SITE_URL . '/start.php');
+      exit;
+    }
   }
 
   public function readPosts(){
