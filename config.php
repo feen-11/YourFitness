@@ -21,4 +21,4 @@ $pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNIN
 
 // require_once(__DIR__ . '/functions.php');
 
-// session_start();
+session_start();
