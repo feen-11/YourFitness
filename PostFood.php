@@ -53,7 +53,7 @@ class PostFood extends Controller {
             $app->postFood();
           }  
         // redirect
-        header('Location: SITE_URL');
+        header('Location: ' . SITE_URL . '/index.php');
         exit;
     }
     
