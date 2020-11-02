@@ -92,7 +92,7 @@ section h2 {
 /* title */
 
 .signup .header-wrapper, .login .header-wrapper, .aboutYourFitness .header-wrapper{
-  background-image: url(images/title.jpg);
+  background-image: url(title.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
