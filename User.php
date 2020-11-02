@@ -7,8 +7,19 @@ require_once(__DIR__ . '/UnmatchEmailOrPassword.php');
 class User extends Model{
 
   public function userCreate(){
+      $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
+  $db['dbname'] = ltrim($db['path'], '/');
+  $dsn = "mysql:host={$db['host']};dbname={$db['dbname']};charset=utf8";
+  $user = $db['user'];
+  $password = $db['pass'];
+  $options = array(
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
+  );
+  $pdo = new PDO($dsn,$user,$password,$options);
       $sql = "insert into users (email, name, password, created, updated) values (:email, :name, :password, now(), now())";
-      $stmt = $this->dbh->prepare($sql);
+      $stmt = $pdo->prepare($sql);
       $res = $stmt->execute([
         ':email' => $_POST['email'],
         ':name' => $_POST['name'],
