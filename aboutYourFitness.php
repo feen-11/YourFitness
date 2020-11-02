@@ -28,21 +28,21 @@
             <p class="pickup text-center col-6 mx-auto">自分だけの記録</p>
             <div class="description-block row d-flex justify-content-around">
               <p class="description col-md-5">アカウントを作成してログイン。自分の記録は自分しか見れないので安心してご利用頂けます。自分だけのフィットネス日記を気ままに作っていきましょう。</p>
-              <img src="images/image1.png" alt="" class="col-md-4">
+              <img src="image1.png" alt="" class="col-md-4">
             </div>
           </div>
           <div class="detail block">
             <p class="pickup text-center col-6 mx-auto">食事とトレーニングを記録</p>
             <div class="description-block row d-flex justify-content-around">
               <p class="description col-md-5">記録した食事とトレーニングを、日別にご覧いただけます。毎日の記録には食事、トレーニング、日記、体重の四つを投稿することが出来、自分が普段どんな生活を送っているのかを知る事が出来ます。</p>
-              <img src="images/image2.png" alt="" class="col-md-4">
+              <img src="image2.png" alt="" class="col-md-4">
           </div>
           </div>
           <div class="detail block">
             <p class="pickup text-center col-6 mx-auto">記録を見返して改善</p>
             <div class="description-block row d-flex justify-content-around">
               <p class="description col-md-5">摂取カロリーの合計と燃焼したカロリーの合計がそれぞれ自動で表示されるので簡単に管理して頂けます。より良いフィットネスライフに貢献出来れば幸いです。</p>
-              <img src="images/image3.png" alt="" class="col-md-4">
+              <img src="image3.png" alt="" class="col-md-4">
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
           <h2 class="heading text-center"><i class="fas fa-user fa-lg"></i> 製作者</h2>
           <div class="detail row d-flex justify-content-around">
             <div class="producer-section">
-              <img src="images/producer.jpg" alt="" class="producer">
+              <img src="producer.jpg" alt="" class="producer">
             </div>
             <div class="producer-description col-xs-12 col-md-6 my-auto">
               <p class="description">はじめまして。平成１０年生まれの２２歳駆け出しエンジニアの塩澤泰知と申します。２０２１年３月に大学を卒業します。大学３年時にエンジニアを志し独学でwebアプリケーション開発について学んできました。現在独学開始から一年弱が経過し、このようなアプリケーションを開発する地点まで至りました。これからは実務においてスキルを磨き、人の役に立つ事ができる人材を目指して参ります。よろしくお願い致します。</p>
