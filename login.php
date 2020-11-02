@@ -5,6 +5,9 @@ require_once(__DIR__ . '/Login.php');
 $app = new Login();
 $app->run();
 
+$db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
+var_dump($db);
+
 ?>
 
 <!DOCTYPE html>
