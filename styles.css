@@ -1,0 +1,579 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2.0;
+  letter-spacing: 0.1em;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+ }
+
+h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a { 
+  text-decoration: none; 
+  transition: all .6s ease;
+}
+
+a:hover { 
+  transition: all .6s ease;
+}
+
+.content-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+.err{
+  color: red;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.res{
+  color: blue;
+  font-weight: bold;
+}
+
+.caption{
+  color: grey;
+  font-weight: bold;
+}
+
+.post{
+  margin-bottom: 40px;
+}
+
+.copyrights{
+  font-size: 11px;
+}
+/* signup.php */
+
+/* title */
+
+.signup .header-wrapper, .login .header-wrapper, .aboutYourFitness .header-wrapper{
+  background-image: url(images/title.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: #fff;
+}
+
+.title-header{
+  background-color: rgb(10,25,26,0.7);
+}
+
+.title-header h1{
+  font-size: 55px;
+  border-bottom: 1px solid #fff;
+}
+
+/* main */
+
+.signup-main{
+  margin: 60px auto;
+}
+
+.signup-main h2{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.signup-form{
+  margin-top: 40px;
+}
+
+.signup-form p{
+  font-size: 20px;
+}
+
+.name, .email, .password{
+  margin-bottom: 20px;
+}
+
+.signup .btn{
+  margin-bottom: 20px;
+}
+
+/* login.php */
+
+.login h2{
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.login-description h2, .login-description p{
+  margin-bottom: 30px;
+}
+
+.login-form{
+  margin: 40px auto;
+}
+
+.login-form p{
+  font-size: 20px;
+
+}
+
+.login-form .btn{
+  margin: 30px; 
+}
+
+/* setUp.php */
+
+.header{
+  height: 90px;
+  background-color: #374C55;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.header a{
+  color: #fff;
+}
+
+.header .row{
+  height: 90px;
+}
+
+.header .login-user{
+  margin-right: 30px;
+}
+
+/* main */
+
+.setUp-title h2{
+  font-size: 40px;
+  font-weight: bold;
+}
+.setUp-form p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.setUp-form{
+  margin-bottom: 60px;
+}
+
+.setUp-title{
+  margin-bottom: 60px;
+}
+
+.setUp-form .row{
+  margin-bottom: 40px;
+}
+
+.sex-info{
+  margin: 30px auto;
+}
+
+/* start.php */
+/* main */
+
+.metabolism{
+  border: 1px sold #000;
+}
+
+.start main{
+  margin-bottom: 60px;
+}
+
+.start .current{
+  margin-bottom: 60px;
+}
+
+.start-title{
+  margin-bottom: 60px;
+}
+
+.start-title h2{
+  font-size: 40px;
+  font-weight: bold;
+}
+.start-title p{
+  font-size: 20px;
+}
+
+.current{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  margin-bottom: 10px;
+  padding: 20px 40px;
+}
+
+.bmi-description{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.set-goal{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  padding: 20px 40px;
+  margin-bottom: 40px;
+}
+
+.section-title{
+  font-weight: bold;
+  border-bottom: double 5px #11da54;
+  padding-bottom: 10px;
+}
+.set-goal p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.metabolism, .bmi{
+  margin: 30px auto;
+}
+
+.set-goal-title{
+  margin-bottom: 40px;
+}
+
+.goal-weight{
+  margin-bottom: 40px;
+}
+
+.goal-weight p{
+  margin-right: 20px;
+}
+
+.declaration div{
+  margin-top: 40px;
+}
+
+textarea {
+  resize: none;
+  width:100%;
+  height:200px;
+}
+
+/* index.php */
+
+/* create */
+.index .create{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.create a{
+  font-size: 20px;
+  font-weight: bold;
+}
+/* .index .create h2{
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: double 5px #11da54;
+} */
+
+/* post */
+.total-calorie{
+  font-weight: bold;
+}
+
+.day{
+  /* border: 10px ridge silver; */
+  /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-bottom: 40px;
+  padding: 25px 40px;
+}
+
+.post{
+  margin: 20px 0;
+}
+
+.show-posts h3{
+  font-size: 25px;
+  padding: 20px 2px;
+  color: #fff;
+  background-color: lightsteelblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.index .timeflame{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.post-info{
+  font-size: 18px;
+}
+
+.post-block{
+  border-bottom: 1px solid rgba(3, 102, 214, 0.3);
+}
+
+
+.food{
+  margin: 20px 0;
+}
+
+.breakfast, .lunch, .dinner{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  margin-bottom: 10px;
+}
+
+.training-title{
+  padding-top: 20px;
+}
+
+.training{
+  margin: 20px 0;
+
+}
+
+.diary{
+  margin: 20px 0;
+}
+
+.today-weight{
+  font-weight: bold;
+}
+.fa-utensils{
+  color: darkorange;
+}
+
+.fa-running{
+  color: dodgerblue;
+}
+
+.fa-pencil-alt{
+  color: limegreen;
+}
+
+.fa-dumbbell{
+  color: maroon;
+}
+
+.fa-fire{
+  color: #f15d22;
+}
+
+.fa-heartbeat{
+  color: #f50c46;
+}
+
+.fa-pagelines{
+  color: green;
+}
+
+.fa-restroom{
+  color: rgb(223, 11, 223);
+}
+
+.fa-envelope{
+  color: blue;
+}
+
+.fa-arrow-up{
+  color: red;
+}
+/* footer */
+
+html,body{
+  height:100%;
+}
+
+.footer{
+  background-color: #374C55;
+  color: #fff;
+  height: 80px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+
+
+.footer p{
+  margin: 0;
+}
+
+/* userShow.php */
+
+.heading{
+  /* font-size: 30px; */
+  font-weight: bold;
+  border-bottom: double 5px darkorange;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+/* .description{
+  font-size: 20px;
+} */
+
+.user-info-show p{
+  /* font-weight: bold; */
+  font-size: 20px;
+}
+
+.user-info-show{
+  margin-bottom: 40px;
+}
+
+.user-info-show .link-btn a{
+  margin: 0 20px;
+}
+
+/* userEdit.php */
+
+
+.user-edit{
+  margin: 60px auto;
+}
+
+.user-edit-form .row{
+  margin: 10px 0; 
+}
+
+.user-edit-form p{
+  font-size: 20px;
+}
+
+.user-edit-form .post-create p{
+  margin: 20px
+}
+
+/* postFood.php */
+
+.post-food{
+  margin: 60px auto;
+}
+.post-heading{
+  font-size: 18px;
+  font-weight: bold;
+}
+.food-name, .food-calorie{
+  margin: 40px auto;
+}
+
+.link-btn a{
+  margin: 0 20px;
+}
+
+.link-btn{
+  margin: 60px auto;
+}
+
+/* postBody.php */
+
+.post-body-form{
+  margin: 100px auto;
+}
+
+/* postTraining.php */
+
+.post-training-form{
+  margin: 100px auto;
+}
+
+/* postWeight.php */
+
+.post-weight-form{
+  margin: 100px auto;
+}
+
+/* aboutYourFitness */
+
+.aboutYourFitness main{
+  margin: 60px auto;
+}
+
+.pickup{
+  font-weight: bold;
+  font-size: 30px;
+  border-bottom: 3px double seagreen;
+}
+
+.aboutYourFitness .heading{
+  font-size: 40px;
+}
+
+.description{
+  font-size: 18px;
+}
+
+.producer{
+  width: 300px;
+  height:300px;
+  border-radius: 50%;
+}
+
+.mini-heading{
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+.language-title{
+  font-weight: bold;
+}
+
+.note{
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+}
+.block{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin: 20px 5px;
+  padding: 10px;
+}
+
+.about-app img{
+  width: 300px;
+  height: 300px;
+}
+
+.section{
+  margin: 125px auto;
+}
+
+.aboutYourFitness li{
+  font-weight: bold;
+}
+
+.detail{
+  margin-top: 50px;
+}
