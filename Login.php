@@ -44,7 +44,7 @@ class Login extends Controller{
         $sample->postFoodSample();
         $sample->postTrainingSample();
         // redirect
-        header('Location: SITE_URL');
+        header('Location: ' . SITE_URL . '/index.php');
       }catch(UnmatchEmailOrPassword $e){
         $this->setErrors('unmatch', $e->getMessage());
       }
