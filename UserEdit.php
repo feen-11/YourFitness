@@ -48,7 +48,7 @@ class UserEdit extends Controller{
     } else{
       $app = new User();
       $app->userEdit();
-      header('Location: ' . SITE_URL . '/.php');
+      header('Location: ' . SITE_URL . '/index.php');
     }
   }
 
