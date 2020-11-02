@@ -58,7 +58,7 @@ $app->run();
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4"><i class="fas fa-arrow-up fa-lg"></i> 身長</p>
-                <input class="col-sm-12 col-md-8" type="text" name="height" placeholder="email" value="<?php echo $_SESSION['me']['height'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="height" placeholder="身長" value="<?php echo $_SESSION['me']['height'] ?>">
                 <p class="err"><?= h($app->getErrors('height'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
