@@ -40,7 +40,7 @@ class Signup extends Controller{
         $user = new User();
         $user->userCreate();
         // redirect
-        header('Location: SITE_URL' . '/index.php');
+        header('Location: SITE_URL');
       }
   }
 
