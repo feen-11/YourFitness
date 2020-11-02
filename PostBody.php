@@ -45,7 +45,7 @@ class PostBody extends Controller {
             $app->postBody();
           }  
         // redirect
-        header('Location: SITE_URL');
+        header('Location: ' . SITE_URL . '/index.php');
         exit;
     }
     
