@@ -7,6 +7,7 @@ $app->run();
 
 $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
 var_dump($db);
+var_dump(SITE_URL);
 
 ?>
 
