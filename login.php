@@ -42,9 +42,9 @@ $app->run();
         <div class="login-description mx-auto text-center">
           <h2 class="heading">ログイン</h2>
           <p class="caption">アカウント登録時に設定したメールアドレスとパスワードを入力してください。</p>
-          <p>以下のメールアドレスとパスワードでログインすると初期設定をスキップして機能をお試し頂けます。</p>
-          <p>メールアドレス:test@gmail.com</p>
-          <p>パスワード:test</p>
+          <p class="caption">以下のメールアドレスとパスワードでログインすると初期設定をスキップして機能をお試し頂けます。</p>
+          <p class="caption">メールアドレス:test@gmail.com</p>
+          <p class="caption">パスワード:test</p>
         </div>
         <section class="login-form container text-center">
           <form action="" method="post" id="login" >
