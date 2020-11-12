@@ -5,13 +5,6 @@ require_once(__DIR__ . '/Login.php');
 $app = new Login();
 $app->run();
 
-// $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
-// var_dump($db);
-// var_dump($db['dbname'] = ltrim($db['path'], '/'));
-// var_dump($dsn = "mysql:host={$db['host']};dbname={$db['dbname']};charset=utf8");
-// var_dump($user = $db['user']);
-// var_dump($password = $db['pass']);
-
 ?>
 
 <!DOCTYPE html>
@@ -43,8 +36,8 @@ $app->run();
           <h2 class="heading">ログイン</h2>
           <p class="caption">アカウント登録時に設定したメールアドレスとパスワードを入力してください。</p>
           <p class="caption">以下のメールアドレスとパスワードでログインすると初期設定をスキップして機能をお試し頂けます。</p>
-          <p class="caption">メールアドレス: test@gmail.com</p>
-          <p class="caption">パスワード: test</p>
+          <p class="caption">メールアドレス:test@gmail.com</p>
+          <p class="caption">パスワード:test</p>
         </div>
         <section class="login-form container text-center">
           <form action="" method="post" id="login" >
