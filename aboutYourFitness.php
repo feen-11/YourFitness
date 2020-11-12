@@ -115,7 +115,7 @@
               </div>
               <div class="block database col-md-5">
                 <p class="mini-heading text-center"><i class="fas fa-database"></i> DB</p>
-                <p>CRUD操作など基本的操作が出来ます。</p>
+                <p>CRUD処理など基本的操作が出来ます。</p>
                 <div class="language-title row d-flex justify-content-around">
                   <p class="col-4">技術</p>
                   <p class="col-4">学習期間</p>
