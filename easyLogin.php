@@ -1,7 +1,7 @@
 <?php
 
-require_once(__DIR__ . '/../config/config.php');
-require_once(__DIR__ . '/../lib/Model/User.php');
+require_once(__DIR__ . '/config.php');
+require_once(__DIR__ . '/User.php');
 
   $app = new User();
   $user = $app->easyLogin();
@@ -9,6 +9,6 @@ require_once(__DIR__ . '/../lib/Model/User.php');
   $model = new Model();
   $model->postLoginDate();
   // redirect
-  header('Location: SITE_URL');
+  header('Location: ' . SITE_URL . '/index.php');
 
 ?>
