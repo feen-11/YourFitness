@@ -40,6 +40,20 @@ class User extends Model{
         throw new UnmatchEmailOrPassword();
       }
   }
+  
+  public function easyLogin(){
+    $sql = 'select * from users where email = :email';
+    $stmt = $this->dbh->prepare($sql);
+    $stmt->execute([
+      ':email' => 'testuser@gmail.com'
+    ]); 
+    $user = $stmt->fetch(\PDO::FETCH_ASSOC);
+      if(password_verify('gamtpdw2476',$user['password'])){
+        return $user;
+      }else{
+        throw new UnmatchEmailOrPassword();
+      }
+  }
 
   public function setUp(){
     // $age = $_POST['age'];
