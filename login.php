@@ -54,6 +54,10 @@ $app->run();
             <div class="btn-primary btn login-btn" onclick="document.getElementById('login').submit();">ログイン</div>
             <input type="hidden" name="token" value="<?= h($_SESSION['token'])?>">
           </form>
+          <form action="easyLogin.php" method="post" id="easy-login">
+              <div class="btn-primary btn" onclick="document.getElementById('easy-login').submit();">簡単ログイン</div>
+              <input type="hidden" name="token" value="<?= h($_SESSION['token'])?>">
+          </form>
           <div class="justify-content-center col-sm-12 col-md-6 mx-auto text-center">
           <a href="signup.php" class="signup-link btn btn-outline-info">初めての方はこちら</a>
           <a href="aboutYourFitness.php" class="btn btn-outline-info">YourFitnessとは</a>
