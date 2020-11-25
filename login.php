@@ -35,7 +35,7 @@ $app->run();
         <div class="login-description mx-auto text-center">
           <h2 class="heading">ログイン</h2>
           <p class="caption">アカウント登録時に設定したメールアドレスとパスワードを入力してください。</p>
-          <p class="caption">「お試しログイン」からログインすると初期設定をスキップして機能をお試し頂けます。</p>
+          <p class="caption">「簡単ログイン」からログインすると初期設定をスキップして機能をお試し頂けます。</p>
         </div>
         <section class="login-form container text-center">
           <form action="" method="post" id="login" >
