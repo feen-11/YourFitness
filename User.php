@@ -45,10 +45,10 @@ class User extends Model{
     $sql = 'select * from users where email = :email';
     $stmt = $this->dbh->prepare($sql);
     $stmt->execute([
-      ':email' => 'testuser@gmail.com'
+      ':email' => 'testuser01@gmail.com'
     ]); 
     $user = $stmt->fetch(\PDO::FETCH_ASSOC);
-      if(password_verify('gamtpdw2476',$user['password'])){
+      if(password_verify('h35sk0kfg',$user['password'])){
         return $user;
       }else{
         throw new UnmatchEmailOrPassword();
