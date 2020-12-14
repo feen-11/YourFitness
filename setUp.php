@@ -29,7 +29,7 @@ $err = $app->getErrors('height');
         </div>
         <div class="header-right d-flex justify-content-end col-xs-12 col-md-6">
           <div class="login-user col-xs-8">
-            <li><i class="fas fa-user"></i><a href="userShow.php"> <?php echo $_SESSION['me']['name'] ?></a></li>
+            <li><i class="fas fa-user"></i><a href="userShow.php"> <?= h($_SESSION['me']['name']) ?></a></li>
           </div>
           <div class="logout col-xs-4">
             <form action="logout.php" method="post" id="logout">
@@ -61,17 +61,17 @@ $err = $app->getErrors('height');
           </div>
           <div class="row age d-flex justify-content-center">
             <p class="col-6"><i class="fab fa-pagelines fa-lg"></i> 年齢</p>
-            <input class="col-md-6" type="text" placeholder="年齢(数値)" name="age" value="<?= isset($app->getValues()->age) ? $app->getValues()->age : '' ?>">
+            <input class="col-md-6" type="text" placeholder="年齢(数値)" name="age" value="<?= isset($app->getValues()->age) ? h($app->getValues()->age) : '' ?>">
             <p class="err"><?= h($app->getErrors('age'));?></p>
           </div>
           <div class="height row d-flex justify-content-center">
             <p class="col-md-6"><i class="fas fa-arrow-up fa-lg"></i> 身長</p>
-            <input class="col-md-6" type="text" name="height" placeholder="身長cm" value="<?= isset($app->getValues()->height) ? $app->getValues()->height : '' ?>"> 
+            <input class="col-md-6" type="text" name="height" placeholder="身長cm" value="<?= isset($app->getValues()->height) ? h($app->getValues()->height) : '' ?>"> 
             <p class="err"><?= h($app->getErrors('height'));?></p>
           </div>
           <div class="weight row d-flex justify-content-center">
             <p class="col-md-6"><i class="fas fa-dumbbell fa-lg"></i> 体重</p>
-            <input class="col-md-6" type="text" name="weight" placeholder="体重kg" value="<?= isset($app->getValues()->weight) ? $app->getValues()->weight : '' ?>"> 
+            <input class="col-md-6" type="text" name="weight" placeholder="体重kg" value="<?= isset($app->getValues()->weight) ? h($app->getValues()->weight) : '' ?>"> 
             <p class="err"><?= h($app->getErrors('weight'));?></p>
           </div>
           <div class="btn-primary btn col-" onclick="document.getElementById('setup').submit();">設定完了</div>
