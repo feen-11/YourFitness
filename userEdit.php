@@ -26,7 +26,7 @@ $app->run();
         </div>
         <div class="header-right d-flex justify-content-end col-xs-12 col-md-6">
           <div class="login-user col-xs-8">
-            <p><i class="fas fa-user"></i><a href="userShow.php"> <?php echo $_SESSION['me']['name'] ?></a></p>
+            <p><i class="fas fa-user"></i><a href="userShow.php"> <?= h($_SESSION['me']['name']) ?></a></p>
           </div>
           <div class="logout col-xs-4">
             <form action="logout.php" method="post" id="logout">
@@ -48,42 +48,42 @@ $app->run();
             <form action="" method="post" id="editUser">
               <div class="user-name-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4"><i class="fas fa-user"></i> ユーザー名</p>
-                <input class="col-sm-12 col-md-8" type="text" name="name" placeholder="name" value="<?php echo $_SESSION['me']['name'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="name" placeholder="name" value="<?= h($_SESSION['me']['name']) ?>">
                 <p class="err"><?= h($app->getErrors('name'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4"><i class="far fa-envelope fa-lg"></i> メールアドレス</p>
-                <input class="col-sm-12 col-md-8" type="text" name="email" placeholder="email" value="<?php echo $_SESSION['me']['email'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="email" placeholder="email" value="<?= h($_SESSION['me']['email']) ?>">
                 <p class="err"><?= h($app->getErrors('email'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4"><i class="fas fa-arrow-up fa-lg"></i> 身長</p>
-                <input class="col-sm-12 col-md-8" type="text" name="height" placeholder="身長" value="<?php echo $_SESSION['me']['height'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="height" placeholder="身長" value="<?= h($_SESSION['me']['height']) ?>">
                 <p class="err"><?= h($app->getErrors('height'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4"><i class="fab fa-pagelines fa-lg"></i> 年齢</p>
-                <input class="col-sm-12 col-md-8" type="text" name="age" placeholder="年齢（数値のみ）" value="<?php echo $_SESSION['me']['age'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="age" placeholder="年齢（数値のみ）" value="<?= h($_SESSION['me']['age']) ?>">
                 <p class="err"><?= h($app->getErrors('age'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4">スタート体重</p>
-                <input class="col-sm-12 col-md-8" type="text" name="weight" placeholder="スタート時体重kg" value="<?php echo $_SESSION['me']['weight'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="weight" placeholder="スタート時体重kg" value="<?= h($_SESSION['me']['weight']) ?>">
                 <p class="err"><?= h($app->getErrors('weight'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4">現在の体重</p>
-                <input class="col-sm-12 col-md-8" type="text" name="nowWeight" placeholder="現在の体重kg" value="<?php echo $_SESSION['me']['nowWeight'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="nowWeight" placeholder="現在の体重kg" value="<?= h($_SESSION['me']['nowWeight']) ?>">
                 <p class="err"><?= h($app->getErrors('nowWeight'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4">目標体重</p>
-                <input class="col-sm-12 col-md-8" type="text" name="goalWeight" placeholder="目標体重kg" value="<?php echo $_SESSION['me']['goalWeight'] ?>">
+                <input class="col-sm-12 col-md-8" type="text" name="goalWeight" placeholder="目標体重kg" value="<?= h($_SESSION['me']['goalWeight']) ?>">
                 <p class="err"><?= h($app->getErrors('goalWeight'));?></p>
               </div>
               <div class="user-email-edit row justify-content-between">
                 <p class="col-sm-12 col-md-4"><i class="fas fa-flag-checkered fa-lg"></i> 意気込み</p>
-                <textarea class="col-sm-12 col-md-8" name="declaration" id=""><?php echo  isset($app->getValues()->declaration) ? $app->getValues()->declaration : $_SESSION['me']['declaration'] ?></textarea>
+                <textarea class="col-sm-12 col-md-8" name="declaration" id=""><?= isset($app->getValues()->declaration) ? h($app->getValues()->declaration) : $_SESSION['me']['declaration'] ?></textarea>
                 <p class="err"><?= h($app->getErrors('declaration'));?></p>
               </div>
               <div class="justify-content-between col-sm-12 col-md-6 mx-auto">
