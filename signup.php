@@ -42,12 +42,12 @@ $app->run();
             <form class="" action="" method="post" id="signup">
               <div class="row name">
                 <p class="col-sm-12 col-md-4"><i class="fas fa-user fa-lg"></i> ユーザー名</p>
-                <input class="col-xs-10 col-md-8" type="text" name="name" placeholder="ユーザー名" value="<?= isset($app->getValues()->name) ? $app->getValues()->name : '' ?>">
+                <input class="col-xs-10 col-md-8" type="text" name="name" placeholder="ユーザー名" value="<?= isset($app->getValues()->name) ? h($app->getValues()->name) : '' ?>">
                 <p class="err col-12"><?= h($app->getErrors('name'));?></p>
               </div>
               <div class="row email">
                 <p class="col-sm-12 col-md-4"><i class="far fa-envelope fa-lg"></i> メールアドレス</p>
-                <input class="col-xs-10 col-md-8" type="text" name="email" placeholder="your@example.com" value="<?= isset($app->getValues()->email) ? $app->getValues()->email : '' ?>">
+                <input class="col-xs-10 col-md-8" type="text" name="email" placeholder="your@example.com" value="<?= isset($app->getValues()->email) ? h($app->getValues()->email) : '' ?>">
                 <p class="err col-12"><?= h($app->getErrors('email'));?></p>
               </div>
               <div class="row password">
