@@ -25,7 +25,7 @@ $app->run();
         </div>
         <div class="header-right d-flex justify-content-end col-xs-12 col-md-6">
           <div class="login-user col-xs-8">
-            <p><i class="fas fa-user"></i><a href="userShow.php"> <?php echo $_SESSION['me']['name'] ?></a></p>
+            <p><i class="fas fa-user"></i><a href="userShow.php"> <?= h($_SESSION['me']['name']) ?></a></p>
           </div>
           <div class="logout col-xs-4">
             <form action="logout.php" method="post" id="logout">
@@ -42,16 +42,16 @@ $app->run();
     <div class="user-show">
       <div class="container">
         <div class="user-info container">
-          <h2 class="text-center heading"><?php echo $_SESSION['me']['name'] ?>のプロフィール</h2>
+          <h2 class="text-center heading"><?= h($_SESSION['me']['name']) ?>のプロフィール</h2>
           <div class="container user-info-show">
-            <p class=""><i class="fas fa-user"></i> ユーザー名：<?php echo $_SESSION['me']['name'] ?></p>
-            <p><i class="far fa-envelope fa-lg"></i> メールアドレス：<?php echo $_SESSION['me']['email'] ?></p>
-            <p><i class="fas fa-arrow-up fa-lg"></i> 身長：<?php echo $_SESSION['me']['height'] ?>cm</p>
-            <p><i class="fab fa-pagelines fa-lg"></i> 年齢：<?php echo $_SESSION['me']['age'] ?>歳</p>
-            <p><i class="fas fa-flag-checkered fa-lg"></i> 意気込み："<?php echo $_SESSION['me']['declaration'] ?>"</p>
-            <p>スタート体重：<?php echo $_SESSION['me']['weight'] ?>kg</p>
-            <p>目標体重：<?php echo $_SESSION['me']['goalWeight'] ?>kg</p>
-            <p>現在の体重：<?php echo $_SESSION['me']['nowWeight'] ?>kg</p>
+            <p class=""><i class="fas fa-user"></i> ユーザー名：<?= h($_SESSION['me']['name']) ?></p>
+            <p><i class="far fa-envelope fa-lg"></i> メールアドレス：<?= h($_SESSION['me']['email']) ?></p>
+            <p><i class="fas fa-arrow-up fa-lg"></i> 身長：<?= h($_SESSION['me']['height']) ?>cm</p>
+            <p><i class="fab fa-pagelines fa-lg"></i> 年齢：<?= h($_SESSION['me']['age']) ?>歳</p>
+            <p><i class="fas fa-flag-checkered fa-lg"></i> 意気込み："<?= h($_SESSION['me']['declaration']) ?>"</p>
+            <p>スタート体重：<?= h($_SESSION['me']['weight']) ?>kg</p>
+            <p>目標体重：<?= h($_SESSION['me']['goalWeight']) ?>kg</p>
+            <p>現在の体重：<?= h($_SESSION['me']['nowWeight']) ?>kg</p>
             <div class="justify-content-center col-sm-12 col-md-6 mx-auto text-center">
               <a class="btn btn-primary edit-link" href="userEdit.php">編集する</a>
               <a href="index.php" class="btn btn-primary">戻る</a>
