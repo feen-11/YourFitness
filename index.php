@@ -44,7 +44,7 @@ $burnCalorie = $app->totalBurnCalorie();
         </div>
         <div class="header-right d-flex justify-content-end col-xs-12 col-md-6">
           <div class="login-user col-xs-8">
-            <p><i class="fas fa-user"></i><a href="userShow.php"> <?php echo $_SESSION['me']['name'] ?></a></p>
+            <p><i class="fas fa-user"></i><a href="userShow.php"> <?= h($_SESSION['me']['name']) ?></a></p>
           </div>
           <div class="logout col-xs-4">
             <form action="logout.php" method="post" id="logout">
