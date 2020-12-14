@@ -115,7 +115,7 @@ $burnCalorie = $app->totalBurnCalorie();
                   <?php endif ;?>
                 <?php endforeach ;?>
                 <div class="row total-burn d-flex justify-content-end">
-                  <p class="total-calorie">合計消費カロリー：<?= isset($burnCalorie[$i]['totalBurnCalorie']) ?h($burnCalorie[$i]['totalBurnCalorie']) : '0'?>kcal</p>
+                  <p class="total-calorie">合計消費カロリー：<?= isset($burnCalorie[$i]['totalBurnCalorie']) ? h($burnCalorie[$i]['totalBurnCalorie']) : '0'?>kcal</p>
                 </div>
             </div>
             <h4><i class="fas fa-pencil-alt"></i>日記</h4>
