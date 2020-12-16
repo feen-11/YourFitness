@@ -50,7 +50,7 @@ class EditFood extends Controller{
       $app = new Post();
       $id = (int)$_GET['id'];
       $app->editFood($id);
-      header('Location: SITE_URL');
+      header('Location: ' . SITE_URL . '/index.php');
     }
   }
 
