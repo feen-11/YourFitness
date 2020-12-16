@@ -1,7 +1,7 @@
 <?php
 
-require_once(__DIR__ . '/../lib/Controller/ShowFood.php');
-require_once(__DIR__ . '/../config/config.php');
+require_once(__DIR__ . '/ShowFood.php');
+require_once(__DIR__ . '/config.php');
 
 $app = new ShowFood();
 $app->run();
