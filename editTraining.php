@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . '/../lib/Controller/EditTraining.php');
+require_once(__DIR__ . '/EditTraining.php');
 
 $app = new EditTraining();
 $app->run();
