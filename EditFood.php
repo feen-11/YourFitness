@@ -1,12 +1,12 @@
 <?php
 
 require_once(__DIR__ . '/Controller.php');
-require_once(__DIR__ . '/../Model/Post.php');
-require_once(__DIR__ . '/../Model/User.php');
-require_once(__DIR__ . '/../Exception/InvalidToken.php');
-require_once(__DIR__ . '/../Exception/InvalidTimeflame.php');
-require_once(__DIR__ . '/../Exception/InvalidFood.php');
-require_once(__DIR__ . '/../Exception/InvalidIntakeCalorie.php');
+require_once(__DIR__ . '/Post.php');
+require_once(__DIR__ . '/Model/User.php');
+require_once(__DIR__ . '/InvalidToken.php');
+require_once(__DIR__ . '/InvalidTimeflame.php');
+require_once(__DIR__ . '/InvalidFood.php');
+require_once(__DIR__ . '/InvalidIntakeCalorie.php');
 
 
 class EditFood extends Controller{
