@@ -2,7 +2,7 @@
 
 require_once(__DIR__ . '/Controller.php');
 require_once(__DIR__ . '/Post.php');
-require_once(__DIR__ . '/Model/User.php');
+require_once(__DIR__ . '/User.php');
 require_once(__DIR__ . '/InvalidToken.php');
 require_once(__DIR__ . '/InvalidTimeflame.php');
 require_once(__DIR__ . '/InvalidFood.php');
