@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . '/../lib/Controller/EditFood.php');
+require_once(__DIR__ . '/EditFood.php');
 
 $app = new EditFood();
 $app->run();
