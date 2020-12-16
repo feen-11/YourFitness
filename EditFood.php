@@ -59,7 +59,7 @@ class EditFood extends Controller{
       throw new InvalidToken();
     }
       
-      if(empty($_POST['timeflame']) || $_POST['timeflame'] !== '朝食' ||$_POST['timeflame'] !== '昼食' || $_POST['timeflame'] !== '夕食'){
+      if(empty($_POST['timeflame'])){
         throw new InvalidTimeflame();
       };
 
