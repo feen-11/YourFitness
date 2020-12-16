@@ -46,7 +46,7 @@ class EditTraining extends Controller{
       $app = new Post();
       $id = (int)$_GET['id'];
       $app->editTraining($id);
-      header('Location: SITE_URL');
+      header('Location: ' . SITE_URL . '/index.php');
     }
   }
 
