@@ -158,6 +158,59 @@ class Post extends Model{
     $res = $stmt->fetch(\PDO::FETCH_ASSOC);
     return $res;
   }
+  
+  public function readDetailedFood($id){
+    $sql = "select * from food where foodId = :id";
+    $stmt = $this->dbh->prepare($sql);
+    $stmt->execute([
+      ':id' => $id
+    ]);
+    return $stmt->fetch(\PDO::FETCH_ASSOC);
+  }
+  public function readDetailedTraining($id){
+    $sql = "select * from training where trainingId = :id";
+    $stmt = $this->dbh->prepare($sql);
+    $stmt->execute([
+      ':id' => $id
+    ]);
+    return $stmt->fetch(\PDO::FETCH_ASSOC);
+  }
+
+  public function editFood($id){
+    $sql = "update food set timeflame = :timeflame, foodName = :foodName, calorie = :calorie, updated = now() where foodId = :foodId";
+    $stmt = $this->dbh->prepare($sql);
+    $stmt->execute([
+      ':timeflame' => $_POST['timeflame'],
+      ':foodName' => $_POST['foodName'],
+      ':calorie' => $_POST['intakeCalorie'],
+      ':foodId' => $id
+    ]);
+  }
+
+  public function deleteFood($id){
+    $sql = "delete from food where foodId = :id";
+    $stmt = $this->dbh->prepare($sql);
+    $stmt->execute([
+      ':id' => $id
+    ]);
+  }
+  public function editTraining($id){
+    $sql = "update training set trainingName = :trainingName, burnCalorie = :burnCalorie, updated = now() where trainingId = :trainingId";
+    $stmt = $this->dbh->prepare($sql);
+    $stmt->execute([
+      ':trainingName' => $_POST['trainingName'],
+      ':burnCalorie' => $_POST['burnCalorie'],
+      ':trainingId' => $id
+    ]);
+  }
+
+  public function deleteTraining($id){
+    $sql = "delete from training where trainingId = :id";
+    $stmt = $this->dbh->prepare($sql);
+    $stmt->execute([
+      ':id' => $id
+    ]);
+  }
 
 } 
 ?>
