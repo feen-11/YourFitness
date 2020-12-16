@@ -82,7 +82,7 @@ $burnCalorie = $app->totalBurnCalorie();
                   <p class="timeflame">朝食</p>
                       <?php foreach($foods as $food) :?>
                         <?php if($food['created'] === $loginDateInfo[$i]['loginDay'] && $food['timeflame'] === '朝食' && $food['foodName'] ==! ''):?>
-                          <p class="post-info"><?= h($food['foodName'])?>：<?= h($food['calorie'])?>kcal</p>
+                          <a href="showFood.php?id=<?= $food['foodId']?>"><p class="post-info"><?php echo $food['foodName']?>：<?php echo $food['calorie']?>kcal</p></a>
                           <?php endif ;?>
                           <?php endforeach ;?>
                 </div>
@@ -90,7 +90,7 @@ $burnCalorie = $app->totalBurnCalorie();
                       <p class="timeflame">昼食</p>  
                       <?php foreach($foods as $food) :?>
                         <?php if($food['created'] === $loginDateInfo[$i]['loginDay'] && $food['timeflame'] === '昼食' && $food['foodName'] ==! '') :?>
-                          <p class="post-info"><?= h($food['foodName'])?>：<?= h($food['calorie'])?>kcal</p>
+                          <a href="showFood.php?id=<?= $food['foodId']?>"><p class="post-info"><?php echo $food['foodName']?>：<?php echo $food['calorie']?>kcal</p></a>
                           <?php endif ;?>
                           <?php endforeach ;?>
                 </div>
@@ -98,7 +98,7 @@ $burnCalorie = $app->totalBurnCalorie();
                           <p class="timeflame">夕食</p>
                           <?php foreach($foods as $food) :?>
                             <?php if($food['created'] === $loginDateInfo[$i]['loginDay'] && $food['timeflame'] === '夕食' && $food['foodName'] ==! '') :?>
-                              <p class="post-info"><?= h($food['foodName'])?>：<?= h($food['calorie'])?>kcal</p>
+                              <a href="showFood.php?id=<?= $food['foodId']?>"><p class="post-info"><?php echo $food['foodName']?>：<?php echo $food['calorie']?>kcal</p></a>
                               <?php endif ;?>
                               <?php endforeach ;?>
                 </div>
@@ -111,7 +111,9 @@ $burnCalorie = $app->totalBurnCalorie();
             <div class="training post-block">
                 <?php foreach($trainings as $training) :?>
                   <?php if($training['created'] === $loginDateInfo[$i]['loginDay'] && $training['trainingName'] ==! '') :?>
-                    <p class="post-info"><?= h($training['trainingName'])?>：<?= h($training['burnCalorie'])?>kcal</p>
+                   <a href="showTraining.php?id=<?=h($training['trainingId'])?>">
+                    <p class="post-info"><?php echo $training['trainingName']?>：<?php echo $training['burnCalorie']?>kcal</p>
+                  </a>
                   <?php endif ;?>
                 <?php endforeach ;?>
                 <div class="row total-burn d-flex justify-content-end">
