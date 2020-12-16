@@ -43,7 +43,7 @@ class Start extends Controller {
             } else{
               $app = new User();
               $app->setGoal();
-              header('Location: ' . SITE_URL);
+              header('Location: ' . SITE_URL . '/index.php');
             }
           }
 
