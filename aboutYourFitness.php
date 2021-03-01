@@ -27,7 +27,7 @@
           <div class="detail block">
             <p class="pickup text-center col-6 mx-auto">自分だけの記録</p>
             <div class="description-block row d-flex justify-content-around">
-              <p class="description col-md-5">アカウントを作成してログイン。自分の記録は自分しか見れないので安心してご利用頂けます。自分だけのフィットネス日記を気ままに作っていきましょう。</p>
+              <p class="description col-md-5">アカウントを作成してログイン。自分の記録は自分しか見れないので安心してご利用いただけます。自分だけのフィットネス日記を気ままに作っていきましょう。</p>
               <img src="image1.png" alt="" class="col-md-4">
             </div>
           </div>
@@ -41,7 +41,7 @@
           <div class="detail block">
             <p class="pickup text-center col-6 mx-auto">記録を見返して改善</p>
             <div class="description-block row d-flex justify-content-around">
-              <p class="description col-md-5">摂取カロリーの合計と燃焼したカロリーの合計がそれぞれ自動で表示されるので簡単に管理して頂けます。より良いフィットネスライフに貢献出来れば幸いです。</p>
+              <p class="description col-md-5">摂取カロリーの合計と燃焼したカロリーの合計がそれぞれ自動で表示されるので簡単に管理していただけます。より良いフィットネスライフに貢献出来れば幸いです。</p>
               <img src="image3.png" alt="" class="col-md-4">
             </div>
           </div>
@@ -53,7 +53,7 @@
               <img src="producer.jpg" alt="" class="producer">
             </div>
             <div class="producer-description col-xs-12 col-md-6 my-auto">
-              <p class="description">はじめまして。平成１０年生まれの２２歳駆け出しエンジニアの塩澤泰知と申します。２０２２年３月に大学を卒業します。大学３年時にエンジニアを志し独学でwebアプリケーション開発について学んできました。現在独学開始から一年弱が経過し、このようなアプリケーションを開発する地点まで至りました。これからは実務においてスキルを磨き、人の役に立つ事ができる人材を目指して参ります。よろしくお願い致します。</p>
+              <p class="description">はじめまして。平成１０年生まれの２２歳駆け出しエンジニアの塩澤泰知と申します。２０２２年３月に大学を卒業します。大学３年時にエンジニアを志し、独学でプログラミングを学んでいます。よろしくお願いいたします。</p>
             </div>
           </div>
           <div class="skill detail text-center">
@@ -145,8 +145,8 @@
             <p class="description">今まで学習サイトの教材に沿ってアプリケーションを開発することはありましたが、オリジナルのものを一から開発するのはこれが初めてでした。コード量が増えていくにつれて管理が難しくなり、バグの修正で行き詰まる場面も多くありました。また、こうした方がもっとユーザーは使いやすいだろうという閃きがあっても、自身のスキルの低さ故に実現出来ないこともあり非常に悔しい思いをしました。</p>
           </div>
           <div class="detail">
-          <p class="pickup text-center col-6 mx-auto">学んだ事</p>
-            <p class="description">まだまだ小さい規模ではありますが一つのアプリケーションを自分の手で完成まで持ってこれたことに非常に充実感を感じています。開発段階のバグの修正ではMVCモデルによる役割によって整理されたコードがいかに大切であるかを実感致しました。また技術的な面に加えて、何日も行き詰まって苦しい時でも開発を続けられるように自分のメンタルをケアする精神面においても成長を感じました。独学開始直後に比べると集中力の持続力も増したように感じています。</p>
+          <p class="pickup text-center col-6 mx-auto">感想</p>
+            <p class="description">まだまだ小さな規模ではありますが一つのアプリケーションを自分の手で完成まで持ってこれたことに大きな充実感を感じています。実際に友人に使ってもらったところ、「やる気が出た」などと評価してもらえ、「自分の作ったものが誰かの役に立つ可能性がある」と現実感を持って感じることが出来ました。</p>
           </div>
           <div class="detail">
             <p class="pickup text-center col-6 mx-auto">これから実装したい機能</p>
